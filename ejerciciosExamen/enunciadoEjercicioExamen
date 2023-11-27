@@ -1,0 +1,3 @@
+Crea dos procesos, y listalos usando psutil 
+el primer proceso estará 10 segundos vivo y matará al otro proceso finalmente creara un fork de si mismo
+el segundo proceso a los 5 segundos cambiara la prioridad del primer proceso
