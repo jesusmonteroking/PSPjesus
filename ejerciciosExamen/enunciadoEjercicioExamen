@@ -1,3 +1,23 @@
 Crea dos procesos, y listalos usando psutil 
 el primer proceso estará 10 segundos vivo y matará al otro proceso finalmente creara un fork de si mismo
 el segundo proceso a los 5 segundos cambiara la prioridad del primer proceso
+
+
+Implementa en Python un código de Productor-Consumidor mediante una cola sincronizada que cumpla con las siguientes especificaciones:
+Productor
+Genera números enteros aleatorios, siendo cada número mayor que 50 y menor que 2000.
+Produce 15 números en cada iteración, almacenándolos en la cola.
+El tiempo de espera entre la generación de un número y otro es de PT segundos.
+Consumidor
+Lee X números de la cola de golpe.
+Calcula la suma de los cuadrados de esos X números.
+El tiempo de espera entre la lectura de X elementos de la cola y la siguiente lectura de los siguientes X elementos es de CT segundos.
+Parametros
+Relación Productor:Consumidor para cada caso.
+PT (tiempo de espera del productor entre generaciones de números).
+CT (tiempo de espera del consumidor entre lecturas de elementos).
+X (cantidad de elementos leídos por el consumidor en cada iteración).
+
+a. Relación 1:1 con PT=2, CT=6 y X=4.
+b. Relación 5:2 con PT=1, CT=3 y X=5.
+c. Relación 3:10 con PT=3, CT=8 y X=2.
